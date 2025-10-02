@@ -1,0 +1,72 @@
+{
+  "E-Catalog": "E-Catalog",
+  "Catalog": "Catalog",
+  "Add Product": "Add Product",
+  "Product Catalog": "Product Catalog",
+  "Browse and filter products by category, price, and rating": "Browse and filter products by category, price, and rating",
+  "Product filters": "Product filters",
+  "Product list": "Product list",
+  "No products found": "No products found",
+  "Try adjusting your filters": "Try adjusting your filters",
+  "Previous": "Previous",
+  "Next": "Next",
+  "Add New Product": "Add New Product",
+  "Fill in the form to add a new product to the catalog": "Fill in the form to add a new product to the catalog",
+  "Product creation form": "Product creation form",
+  "Product Name": "Product Name",
+  "Enter product name": "Enter product name",
+  "Description": "Description",
+  "Enter product description": "Enter product description",
+  "Category": "Category",
+  "Select a category": "Select a category",
+  "Price ($)": "Price ($)",
+  "Rating (0-5)": "Rating (0-5)",
+  "Saving...": "Saving...",
+  "Save": "Save",
+  "Cancel": "Cancel",
+  "Filters": "Filters",
+  "Search": "Search",
+  "Search products...": "Search products...",
+  "Price Range": "Price Range",
+  "Minimum Rating": "Minimum Rating",
+  "Show only favorites": "Show only favorites",
+  "Reset Filters": "Reset Filters",
+  "All": "All",
+  "All Categories": "All Categories",
+  "Any Rating": "Any Rating",
+  "5 Stars": "5 Stars",
+  "4+ Stars": "4+ Stars",
+  "3+ Stars": "3+ Stars",
+  "2+ Stars": "2+ Stars",
+  "1+ Stars": "1+ Stars",
+  "Add to favorites": "Add to favorites",
+  "Remove from favorites": "Remove from favorites",
+  "Main navigation": "Main navigation",
+  "Dmytro Shmahin's test task": "Dmytro Shmahin's test task",
+  "Failed to load categories": "Failed to load categories",
+  "Added to favorites": "Added to favorites",
+  "Removed from favorites": "Removed from favorites",
+  "Failed to update favorites": "Failed to update favorites",
+  "Product created successfully!": "Product created successfully!",
+  "Failed to create product. Please try again.": "Failed to create product. Please try again.",
+  "validation": {
+    "name": {
+      "required": "Name is required",
+      "max": "Name must be at most 255 characters"
+    },
+    "description": {
+      "required": "Description is required"
+    },
+    "category": {
+      "required": "Category is required"
+    },
+    "price": {
+      "required": "Price is required",
+      "range": "Price must be between 0 and 10000"
+    },
+    "rating": {
+      "required": "Rating is required",
+      "range": "Rating must be between 0 and 5"
+    }
+  }
+}

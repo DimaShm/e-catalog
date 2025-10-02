@@ -1,0 +1,72 @@
+{
+  "E-Catalog": "Е-Каталог",
+  "Catalog": "Каталог",
+  "Add Product": "Додати продукт",
+  "Product Catalog": "Каталог продуктів",
+  "Browse and filter products by category, price, and rating": "Переглядайте та фільтруйте продукти за категорією, ціною та рейтингом",
+  "Product filters": "Фільтри продуктів",
+  "Product list": "Список продуктів",
+  "No products found": "Продукти не знайдено",
+  "Try adjusting your filters": "Спробуйте налаштувати фільтри",
+  "Previous": "Попередня",
+  "Next": "Наступна",
+  "Add New Product": "Додати новий продукт",
+  "Fill in the form to add a new product to the catalog": "Заповніть форму, щоб додати новий продукт до каталогу",
+  "Product creation form": "Форма створення продукту",
+  "Product Name": "Назва продукту",
+  "Enter product name": "Введіть назву продукту",
+  "Description": "Опис",
+  "Enter product description": "Введіть опис продукту",
+  "Category": "Категорія",
+  "Select a category": "Оберіть категорію",
+  "Price ($)": "Ціна ($)",
+  "Rating (0-5)": "Рейтинг (0-5)",
+  "Saving...": "Збереження...",
+  "Save": "Зберегти",
+  "Cancel": "Скасувати",
+  "Filters": "Фільтри",
+  "Search": "Пошук",
+  "Search products...": "Шукати продукти...",
+  "Price Range": "Діапазон цін",
+  "Minimum Rating": "Мінімальний рейтинг",
+  "Show only favorites": "Показати лише обрані",
+  "Reset Filters": "Скинути фільтри",
+  "All": "Всі",
+  "All Categories": "Всі категорії",
+  "Any Rating": "Будь-який рейтинг",
+  "5 Stars": "5 зірок",
+  "4+ Stars": "4+ зірки",
+  "3+ Stars": "3+ зірки",
+  "2+ Stars": "2+ зірки",
+  "1+ Stars": "1+ зірка",
+  "Add to favorites": "Додати до обраних",
+  "Remove from favorites": "Видалити з обраних",
+  "Main navigation": "Головна навігація",
+  "Dmytro Shmahin's test task": "Тестове завдання Дмитра Шмагіна",
+  "Failed to load categories": "Не вдалося завантажити категорії",
+  "Added to favorites": "Додано до обраних",
+  "Removed from favorites": "Видалено з обраних",
+  "Failed to update favorites": "Не вдалося оновити обрані",
+  "Product created successfully!": "Продукт успішно створено!",
+  "Failed to create product. Please try again.": "Не вдалося створити продукт. Спробуйте ще раз.",
+  "validation": {
+    "name": {
+      "required": "Назва обов'язкова",
+      "max": "Назва має бути не більше 255 символів"
+    },
+    "description": {
+      "required": "Опис обов'язковий"
+    },
+    "category": {
+      "required": "Категорія обов'язкова"
+    },
+    "price": {
+      "required": "Ціна обов'язкова",
+      "range": "Ціна має бути від 0 до 10000"
+    },
+    "rating": {
+      "required": "Рейтинг обов'язковий",
+      "range": "Рейтинг має бути від 0 до 5"
+    }
+  }
+}

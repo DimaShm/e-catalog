@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+/* Prevent layout shift from scrollbar */
+html {
+  overflow-y: scroll;
+}

@@ -1,0 +1,17 @@
+{
+  "name": "E-Catalog - Product Management",
+  "short_name": "E-Catalog",
+  "description": "Browse and manage your product catalog with advanced filters",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "icons": [
+    {
+      "src": "/icons/package.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
