@@ -10,8 +10,6 @@ init: ## Initialize project (first time setup)
 	@echo "Copying environment files..."
 	@if [ ! -f backend/.env ]; then cp backend/.env.example backend/.env; echo "Created backend/.env"; fi
 	@if [ ! -f frontend/.env ]; then cp frontend/.env.example frontend/.env; echo "Created frontend/.env"; fi
-	@echo "Installing frontend dependencies..."
-	cd frontend && npm install
 	@echo "Starting containers..."
 	docker-compose up -d
 	@echo "Waiting for database to be ready..."
@@ -21,11 +19,11 @@ init: ## Initialize project (first time setup)
 	done'
 	@echo "Database is ready!"
 	@echo "Installing backend dependencies..."
-	docker-compose exec app composer install --no-interaction --prefer-dist --optimize-autoloader
+	docker-compose exec -w /var/www app composer install --no-interaction --prefer-dist --optimize-autoloader
 	@echo "Running migrations..."
-	docker-compose exec app php artisan migrate --force
+	docker-compose exec -w /var/www app php artisan migrate --force
 	@echo "Seeding database..."
-	docker-compose exec app php artisan db:seed --force
+	docker-compose exec -w /var/www app php artisan db:seed --force
 	@echo "Setup complete! Access:"
 	@echo "  Frontend: http://localhost:3000"
 	@echo "  Backend:  http://localhost:8000/api"
