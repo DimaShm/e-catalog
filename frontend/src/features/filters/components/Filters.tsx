@@ -85,7 +85,7 @@ export default function Filters() {
         <input
           type="checkbox"
           id="favorites-only"
-          checked={filters.favorites_only || false}
+          checked={Boolean(filters.favorites_only)}
           onChange={(e) => handleFavoritesChange(e.target.checked)}
           className="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500 cursor-pointer"
         />

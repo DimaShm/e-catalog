@@ -6,7 +6,11 @@ export const useProducts = () => {
 
   useEffect(() => {
     void fetchProducts(filters, currentPage);
-  }, [filters, currentPage, fetchProducts]);
+  }, [
+    filters,
+    currentPage,
+    fetchProducts,
+  ]);
 
   return {
     products,

@@ -3,7 +3,7 @@ import { useStore } from '@/store';
 import { DEBOUNCE_DELAY, PRICE_RANGE } from '../store/constants';
 
 export const useFilters = () => {
-  const { categories, filters, setFilters, resetFilters, fetchCategories } = useStore();
+  const { categories, filters, setFilters, resetFilters, fetchCategories, setCurrentPage } = useStore();
   const [searchInput, setSearchInput] = useState(filters.search || '');
   const [isSearching, setIsSearching] = useState(false);
   const [priceRange, setPriceRange] = useState<[number, number]>([
@@ -41,9 +41,10 @@ export const useFilters = () => {
     }
     searchTimeoutRef.current = setTimeout(() => {
       setFilters({ search: value });
+      setCurrentPage(1);
       setIsSearching(false);
     }, DEBOUNCE_DELAY.SEARCH);
-  }, [setFilters]);
+  }, [setFilters, setCurrentPage]);
 
   const handleSearchChange = useCallback((value: string) => {
     setSearchInput(value);
@@ -57,24 +58,28 @@ export const useFilters = () => {
     }
     priceTimeoutRef.current = setTimeout(() => {
       setFilters({ min_price: value[0], max_price: value[1] });
+      setCurrentPage(1);
     }, DEBOUNCE_DELAY.PRICE_RANGE);
-  }, [setFilters]);
+  }, [setFilters, setCurrentPage]);
 
   const handleCategoryChange = useCallback((value: string | number) => {
     setFilters({
       category_id: value ? Number(value) : undefined,
     });
-  }, [setFilters]);
+    setCurrentPage(1);
+  }, [setFilters, setCurrentPage]);
 
   const handleRatingChange = useCallback((value: string | number) => {
     setFilters({
       rating: value ? parseFloat(String(value)) : undefined,
     });
-  }, [setFilters]);
+    setCurrentPage(1);
+  }, [setFilters, setCurrentPage]);
 
   const handleFavoritesChange = useCallback((checked: boolean) => {
     setFilters({ favorites_only: checked });
-  }, [setFilters]);
+    setCurrentPage(1);
+  }, [setFilters, setCurrentPage]);
 
   return {
     categories,
